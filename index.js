@@ -10,7 +10,7 @@ server.use(express.json());
 server.use(cors());
 
 server.get('/', (req, res) => {
-    res.send("<h1> Welcome to Romy's user database")
+    res.send("<h1> Welcome to Romy's user database</h1>")
 });
 
 server.get('/api/users', (req, res) => {
