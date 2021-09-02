@@ -9,6 +9,10 @@ const server = express();
 server.use(express.json());
 server.use(cors());
 
+server.get('/', (req, res) => {
+    res.send("<h1> Welcome to Romy's user database")
+});
+
 server.get('/api/users', (req, res) => {
     res.status(200).json(users);
 });
